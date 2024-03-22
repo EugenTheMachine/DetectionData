@@ -1,0 +1,17 @@
+#path: 'datasets' # dataset root dir
+#train: images/train  # train images (relative to 'path')
+#val: images/val  # val images (relative to 'path')
+#pretrained=False
+
+train: data/train/images  # Replace with the actual path to your training images
+val: data/val/images  # Replace with the actual path to your validation images (optional)
+names: ['cell']  # Replace with your class names
+
+augmentation:  # Optional augmentation section
+  mosaic: 0.5  # Apply mosaic augmentation with probability 1 (always)
+  flip: 0.75  # Apply random horizontal flip with probability 0.5
+  hsv_h: 0.015  # Adjust image hue with a range of +/- 0.015
+
+# Classes
+#names:
+  #0: Cell
